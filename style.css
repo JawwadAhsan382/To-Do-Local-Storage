@@ -3,8 +3,11 @@
     margin: auto;
     text-align: center;
 }
+input{
+    height: 30px;
+}
 input::placeholder{
-    color: aqua;
+    text-align: center;
 }
 h1{
     text-align: center;
@@ -13,5 +16,10 @@ button{
     background-color: aqua;
 }
 li{
-    list-style-type: square;
+    border: 2px dotted black;
+    padding: 5px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
