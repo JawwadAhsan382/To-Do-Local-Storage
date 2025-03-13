@@ -14,21 +14,6 @@ else{
     getList.appendChild(createLi)
     }
 }
-function del(a){
-    // for(i=0;i<arr.length;i++){
-    //     if(a.firstChild.textContent==(arr[i].ab+' ')){
-    //         arr.splice(i,1)
-    //         break
-    //     }
-    // }
-    arr=arr.filter((cv)=>{
-        let b=cv.ab
-        b=b+' '
-        return !(b==a.firstChild.textContent)
-    })
-    localStorage.setItem('item',JSON.stringify(arr))
-    a.remove()
-}
 function add(){
     if(getInp.value==''){
         alert('Empty strings not allowed')
@@ -61,10 +46,20 @@ function edit(a){
         }
         localStorage.setItem('item',JSON.stringify(arr))
         a.firstChild.textContent=ed
+        console.log(arr)
     }
     else{
         alert('Empty strings are not allowed')
     }
+}
+function del(a){
+    console.log(arr)
+    arr=arr.filter((cv)=>{
+        return !(cv.ab==a.firstChild.textContent)
+    })
+    console.log(arr)
+    localStorage.setItem('item',JSON.stringify(arr))
+    a.remove()
 }
 function delAll(){
     getList.remove()
