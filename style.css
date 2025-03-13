@@ -1,0 +1,17 @@
+.main{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+input::placeholder{
+    color: aqua;
+}
+h1{
+    text-align: center;
+}
+button{
+    background-color: aqua;
+}
+li{
+    list-style-type: square;
+}
