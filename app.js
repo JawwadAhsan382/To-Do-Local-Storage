@@ -39,7 +39,7 @@ function edit(a){
     let ed=prompt('Enter updated value')
     if (ed){
         for(i=0;i<arr.length;i++){
-            if((arr[i].ab+' ')==a.firstChild.textContent || arr[i].ab)==a.firstChild.textContent){
+            if((arr[i].ab+' ')==a.firstChild.textContent || (arr[i].ab)==a.firstChild.textContent){
                 arr[i].ab=ed
                 break
             }
