@@ -46,18 +46,15 @@ function edit(a){
         }
         localStorage.setItem('item',JSON.stringify(arr))
         a.firstChild.textContent=ed
-        console.log(arr)
     }
     else{
         alert('Empty strings are not allowed')
     }
 }
 function del(a){
-    console.log(arr)
     arr=arr.filter((cv)=>{
         return !(cv.ab==a.firstChild.textContent)
     })
-    console.log(arr)
     localStorage.setItem('item',JSON.stringify(arr))
     a.remove()
 }
