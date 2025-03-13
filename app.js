@@ -39,7 +39,7 @@ function edit(a){
     let ed=prompt('Enter updated value')
     if (ed){
         for(i=0;i<arr.length;i++){
-            if((arr[i].ab+' ')==a.firstChild.textContent){
+            if((arr[i].ab+' ')==a.firstChild.textContent || arr[i].ab)==a.firstChild.textContent){
                 arr[i].ab=ed
                 break
             }
@@ -53,7 +53,7 @@ function edit(a){
 }
 function del(a){
     arr=arr.filter((cv)=>{
-        return !(cv.ab==a.firstChild.textContent)
+        return !(cv.ab==a.firstChild.textContent || (cv.ab+' ')==a.firstChild.textContent)
     })
     localStorage.setItem('item',JSON.stringify(arr))
     a.remove()
