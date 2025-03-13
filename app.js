@@ -45,7 +45,7 @@ function edit(a){
             }
         }
         localStorage.setItem('item',JSON.stringify(arr))
-        a.firstChild.textContent=ed
+        a.firstChild.textContent=ed+' '
     }
     else{
         alert('Empty strings are not allowed')
